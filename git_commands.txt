@@ -1,0 +1,74 @@
+Student Name: Tanishq Singh
+Roll Number: 2024eb02457
+Course: Git & Version Control Assignment
+Repository URL: https://github.com/Tanishq217/Bits-git-assignment-2024eb02457.git
+
+================================================================================
+GIT COMMANDS DOCUMENTATION FILE
+================================================================================
+
+1. git init -b main
+   Initializes a new Git repository in the current project directory and sets the default branch name to 'main'.
+
+2. git config user.name "Tanishq Singh"
+   Sets the author name associated with all Git commits made in this local repository.
+
+3. git config user.email "tanishqsinghtanishq135@gmail.com"
+   Configures the author email address for commits to match the GitHub account credentials.
+
+4. git status
+   Displays the current state of the working directory and staging area, showing tracked, untracked, and modified files.
+
+5. git add index.html about.html
+   Stages the initial HTML files (index.html and about.html) to prepare them for the first commit.
+
+6. git commit -m "Initial commit with index and about pages"
+   Records a snapshot of the staged files to the repository history with a descriptive commit message.
+
+7. git diff about.html
+   Shows line-by-line differences between the modified about.html file in the working directory and the last committed state.
+
+8. git add about.html
+   Stages the updated about.html file containing technical skills and contact info for the next commit.
+
+9. git commit -m "Add technical skills and contact info to about page"
+   Saves the second commit to the main branch history with updated about.html contents.
+
+10. git branch feature
+    Creates a new branch named 'feature' branching off from the current commit on the main branch.
+
+11. git checkout feature
+    Switches the active working branch from 'main' to the 'feature' branch.
+
+12. git add index.html
+    Stages the modified index.html file containing the featured projects section on the feature branch.
+
+13. git commit -m "Add featured projects section in index.html"
+    Commits the changes made to index.html directly into the feature branch.
+
+14. git checkout main
+    Switches the active branch back to the 'main' branch to prepare for merging.
+
+15. git merge --no-ff feature -m "Merge branch 'feature' into main"
+    Merges the changes from the feature branch into the main branch, creating a distinct merge commit to preserve branch topology.
+
+16. git log --graph --oneline --all
+    Prints a visual graph of the commit history across all branches in a concise single-line format.
+
+17. git add .gitignore
+    Stages the .gitignore file configured to exclude log files (*.log) and the temp directory (temp/).
+
+18. git commit -m "Add .gitignore to ignore log files and temp directory"
+    Commits the .gitignore rules to the repository history so untracked log and temp files are excluded from version control.
+
+19. git reset HEAD~1
+    Undoes the most recent commit, moving HEAD back by one commit while leaving the modified files in the working directory.
+
+20. git remote add origin https://github.com/Tanishq217/Bits-git-assignment-2024eb02457.git
+    Links the local Git repository to the remote public repository hosted on GitHub under the alias 'origin'.
+
+21. git push -u origin main
+    Uploads the local main branch commits to the remote GitHub repository and sets origin/main as the upstream tracking reference.
+
+22. git push -u origin feature
+    Pushes the feature branch to the remote GitHub repository so both branches are visible online.
